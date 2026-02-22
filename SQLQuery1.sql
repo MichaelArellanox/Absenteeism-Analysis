@@ -12,8 +12,8 @@ LEFT JOIN Reasons r
 ON aw.Reason_for_absence = r.Number;
 
 -- created joins to merge all the info of the tables together
--- when transferring to Power BI, we only want the columns we need
--- question 1, find the healthiest employees. Look through data to see what is considered healthy
+-- when transferring to Power BI, we only want the columns we need, will optimize later
+-- task 1, find the healthiest employees. Look through data to see what is considered healthy
 
 SELECT *
 FROM Absenteeism_at_work
@@ -24,15 +24,16 @@ and Absenteeism_time_in_hours < (SELECT AVG(Absenteeism_time_in_hours) FROM Abse
 
 
 
--- question 2, compensation rate increase for non smokers
+-- task 2, compensation rate increase for non smokers
 -- budget is 983,221, we now have to find the total hours worked a year for the 686 non smokers
--- 40 hr work weeks x 52 weeks in a year = 2080 hrs worked for an employee
--- 2080 hrs x 686 employees is the total hrs worked for 686 employees
--- 1426880 is our result, now it is 983221/1426880 which is .68 increase per hour or $1,414.4 per year 
 
 SELECT COUNT(*) as non_smokers 
 FROM Absenteeism_at_work
 WHERE Social_smoker = 0
+
+-- 40 hr work weeks x 52 weeks in a year = 2080 hrs worked for an employee
+-- 2080 hrs x 686 employees is the total hrs worked for 686 employees
+-- 1426880 is our result, now it is 983221/1426880 which is .68 increase per hour or $1,414.4 per year 
 
 
 -- optimizing query
@@ -69,3 +70,4 @@ ON aw.ID = comp.ID
 -- second join brings in the reasons table
 LEFT JOIN Reasons r
 ON aw.Reason_for_absence = r.Number;
+

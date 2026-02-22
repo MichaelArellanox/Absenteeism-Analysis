@@ -11,6 +11,6 @@ Respond to HR request of:
 ### Data set
 - Absenteeism at Work [Absent Data](https://absentdata.com/data-analysis/where-to-find-data/)
 
-## Tools Used
+### Tools Used
 - Microsoft SQL Server Management Studio 22 for data analysis:
 - Microsoft Power BI for data visualization: 

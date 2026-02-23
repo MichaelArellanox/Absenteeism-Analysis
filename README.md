@@ -13,4 +13,13 @@ Respond to HR request of:
 
 ### Tools Used
 - Microsoft SQL Server Management Studio 22 for data analysis: [SQL Code](https://github.com/MichaelArellanox/Absenteeism-Analysis/blob/main/SQLQuery1.sql)
-- Microsoft Power BI for data visualization: 
+- Microsoft Power BI for data visualization: [Dashboard](https://github.com/MichaelArellanox/Absenteeism-Analysis/blob/main/DashboardP2.pbix)
+
+### Explanation
+link to medium
+
+### Dashboard
+I have added a screenshot of the dashboard for those who cannot access Power BI
+
+<img width="688" height="794" alt="Screenshot 2026-02-22 171450" src="https://github.com/user-attachments/assets/39a69bbb-07dd-497d-ac55-59a831d902fc" />
+

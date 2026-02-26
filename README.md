@@ -16,7 +16,7 @@ Respond to HR request of:
 - Microsoft Power BI for data visualization: [Dashboard](https://github.com/MichaelArellanox/Absenteeism-Analysis/blob/main/DashboardP2.pbix)
 
 ### Explanation
-link to medium
+[Medium](https://medium.com/p/b3c58f8f7a28?postPublishedType=initial)
 
 ### Dashboard
 I have added a screenshot of the dashboard for those who cannot access Power BI
